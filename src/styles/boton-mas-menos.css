@@ -1,0 +1,10 @@
+.operaciones button {
+    inline-size: 60px;
+    block-size: 50px;
+    font-size: 3em;
+    border-radius: 8px;
+}
+
+.operaciones button text {
+    color: red;
+}

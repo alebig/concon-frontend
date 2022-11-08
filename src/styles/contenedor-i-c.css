@@ -1,0 +1,71 @@
+.contenedorIC {
+    margin-block-start: 1em;
+    margin-inline-start: 6em;
+    margin-block-end: .52em;
+    inline-size: 32em;
+    block-size: 18em;
+    border-radius: 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: rgb(28, 21, 5);
+}
+
+.pocillos>p {
+    min-inline-size: .9em;
+    font-size: 10em;
+    align-items: center;
+    background-color: rgb(28, 21, 5);
+    color: beige;
+}
+
+.operaciones {
+    inline-size: 100px;
+    block-size: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28, 21, 5);
+}
+
+.botonMasMenos {
+    cursor: pointer;
+}
+
+.ingreso {
+    margin-left: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(28, 21, 5);
+}
+
+.ingreso button {
+    inline-size: 170px;
+    block-size: 170px;
+    font-size: 2em;
+    border-radius: 12px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.registraciones {
+    inline-size: 32em;
+    padding-block-start: 1px;
+    block-size: 180px;
+    border-radius: 20px;
+    margin-block-start: 1.5em;
+    margin-inline-start: 6em;
+    background-color: tan;
+}
+
+.registraciones-todas {
+    margin-block-start: 14px;
+    margin-inline-start: 25px;
+    inline-size: 29em;
+    block-size: 160px;
+    overflow: auto;
+    scroll-behavior: auto;
+    background-color: tan;
+}

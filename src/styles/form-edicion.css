@@ -1,0 +1,53 @@
+.edicion {
+    margin-block-start: 1em;
+    margin-inline-start: 6em;
+    margin-block-end: .52em;
+    inline-size: 32em;
+    block-size: 8em;
+    padding-block: .2em;
+    border-radius: 1.25em;
+    background-color: aquamarine;
+    display: block; /* -block o none- */
+}
+
+.oculto {
+    display: none;
+}
+
+.form-edicion {
+    background-color: aquamarine;
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin-inline: .8em;
+    margin-block: .6em;
+}
+
+.fecha-hora {
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: .6em;
+}
+.edt-fecha {
+    display: block;
+    margin-block-end: .3em;
+    background-color: aliceblue;
+    padding: .3em;
+    font-size: 1em;
+}
+
+.edt-cantidad {
+    display: block;
+    inline-size: 3em;
+    text-align: right;
+    margin-block-end: .3em;
+    background-color: aliceblue;
+    padding: .3em;
+    font-size: 1em;
+}
+
+.edt-boton {
+    background-color: aliceblue;
+    padding: .3em;
+    font-size: 1em;
+}
