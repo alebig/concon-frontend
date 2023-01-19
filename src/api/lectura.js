@@ -1,5 +1,5 @@
 const lectura = async () => {
-    const res = await fetch('http://127.0.0.1:4038/api/cafe',
+    const res = await fetch('https://www.alebig.com.ar:4038/api/cafe',
     {method: 'GET',
      mode: 'cors'});
     if (res.ok) {
