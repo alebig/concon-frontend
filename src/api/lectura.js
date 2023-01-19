@@ -1,7 +1,6 @@
 const lectura = async () => {
-    const res = await fetch('https://www.alebig.com.ar:4038/api/cafe',
-    {method: 'GET',
-     mode: 'cors'});
+    const res = await fetch('http://191.101.235.205:4038/api/cafe',
+    {method: 'GET'});
     if (res.ok) {
         const registros = await res.json()
         return registros
