@@ -1,5 +1,5 @@
 const elimina = async (id) => {
-    const res = await fetch('http://localhost:4038/api/cafe/'+id,
+    const res = await fetch('http://191.101.235.205:4038/api/cafe/'+id,
         {method: 'DELETE'
         });
     if (res.ok) {

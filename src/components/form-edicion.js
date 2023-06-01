@@ -5,7 +5,7 @@ function FormEdicion ( {registro, modificar }) {
 
     const cant = useRef(null);
     useEffect(() => {
-        const cant2 = cant.current.value
+//        const cant2 = cant.current.value
 //        console.log(cant2)
     }, []);
     let ymdhms = registro.fecha_registro.split(/[- : T Z .]/);
