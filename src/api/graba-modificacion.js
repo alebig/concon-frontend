@@ -7,9 +7,11 @@ const grabaMod = async (id, editedRecord) => {
     if (res.ok) {
     //    console.log(`Registro ${id} fue modificado`) 
         const mensaje = await res.json()
+        console.log(mensaje)
         return mensaje;
     } else {
-        alert(`Error API ${res.status} (${res.statusText})`)
+        console.log(`Error - No se actualizó el registro ${id}`)
+        console.log(`Error API ${res.status} (${res.statusText})`)
     }
 }
 
