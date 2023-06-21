@@ -14,8 +14,9 @@
 
 .pocillos>p {
     min-inline-size: .9em;
+    max-inline-size: 1.55em;
     font-size: 10em;
-    align-items: center;
+    text-align: center;
     background-color: rgb(28, 21, 5);
     color: beige;
 }

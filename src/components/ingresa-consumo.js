@@ -108,7 +108,7 @@ function IngresaConsumo() {
     registroActualizado.fecha_registro = fechaUTC;
     
     const result = await grabaMod(registroActualizado.record_id, registroActualizado);
-    console.log(result)
+    console.log("Result = " + result)
     registroActualizado.fecha_registro = fec;
     
     setRegistros(orderedRecords)
@@ -118,11 +118,6 @@ function IngresaConsumo() {
   return (
     <>
     <div className='contenedorIC'>
-      <div className='pocillos'>
-        <p>
-          {pocillosASumar}
-        </p>
-      </div>
       <div className='operaciones'>
         <BotonMasMenos
           texto = '+'
@@ -130,6 +125,11 @@ function IngresaConsumo() {
         <BotonMasMenos
           texto = '-'
           handleClick = {restar} />
+      </div>
+      <div className='pocillos'>
+        <p>
+          {pocillosASumar}
+        </p>
       </div>
       <div className = 'ingreso'>
         <BotonIngresar

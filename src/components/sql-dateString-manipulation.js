@@ -36,13 +36,13 @@ function sqlDateString (sqlDateString, horaLoc) {
                     ["noviembre", "nov", 30], 
                     ["diciembre", "dic", 31]];
 
-    const dias = [  ["Sábado", "Sá"],
-                    ["Domingo", "Do"],
-                    ["Lunes", "Lu"],
-                    ["Martes", "Ma"],
-                    ["Miercoles", "Mi"],
-                    ["Jueves", "Ju"],
-                    ["Viernes", "Vi"]];
+    const dias = [  ["Sábado", "Sáb"],
+                    ["Domingo", "Dom"],
+                    ["Lunes", "Lun"],
+                    ["Martes", "Mar"],
+                    ["Miercoles", "Mié"],
+                    ["Jueves", "Jue"],
+                    ["Viernes", "Vie"]];
 
     let sumaDias = (dia, mes, anio) => {
         let suma = 0;

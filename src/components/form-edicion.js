@@ -33,12 +33,8 @@ function FormEdicion ( {registro, modificar }) {
     }
 
     const handleEnviar = (e) => {
-        console.log(cant.current.value)
-/*         if ("a" === "a") {
-            return false
-        } else { */
+//        console.log(cant.current.value)
             modificar(valorActualizado)
-//        }
     }
 
     return (

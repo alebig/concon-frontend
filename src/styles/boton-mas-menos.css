@@ -1,10 +1,14 @@
 .operaciones button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     inline-size: 60px;
     block-size: 50px;
     font-size: 3em;
     border-radius: 8px;
+    padding-block-end: 4px;
 }
 
-.operaciones button text {
+/* .operaciones button text {
     color: red;
-}
+} */

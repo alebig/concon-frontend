@@ -5,36 +5,53 @@
     margin-block-end: .4em;
     font-size: 1em;
     display: flex;
+    /* justify-content: flex-end; */
+    align-items:center;
     background-color: rgb(241, 189, 115);
     box-shadow: 3px 2px 3px rgb(173, 114, 36);
 }
 
 .detalle {
     background-color: rgb(241, 189, 115);
-    display: inline-flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-inline-end: 1.4em;
+    /* display: inline-flex; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    margin-inline-end: 1.1em;
+    /* border: 1px solid red; */
 }
 
 .registro :first-child {
-    inline-size: 6.2em;
-    padding-left: 1em;
+    margin-inline-start: .6em;
+    /* inline-size: 80em; */
+    flex-grow:1;
+    /* padding-left: 1em; */
+}
+
+.registro .iconos {
+    inline-size: 5em;
+    flex-grow: 0;
 }
 
 .iconos {
     background-color: rgb(241, 189, 115);
+    /* border: 1px solid red; */
+    /* inline-size: 5em; */
+    /* padding-inline-end: 1em; */
+    display: flex;
+    /* flex-flow: nowrap; */
+    /* align-items: flex-start; */
 }
 
 .icono-registro {
     background-color: rgb(241, 189, 115);
-    display: inline-flex;
-    block-size: 1.3em;
-    inline-size: 2.6em;
-    margin-inline-end: 1em;
+    /* display: inline-flex; */
+    flex: 1;
+    block-size: 1.4em;
+    /* inline-size: 1.3em;
+    margin-inline-end: .1em;
     margin-block-start: .15em;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
+    padding: 0; */
+    /* justify-content: center; */
+    /* align-items: center; */
     cursor: pointer;
 }

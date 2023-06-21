@@ -5,7 +5,7 @@ function BotonIngresar ({ handleClick }) {
     <button
     className='BotonIngresar'
     onClick={handleClick}>
-      Cargar consumo
+      Ingresar consumo
   </button>
   )
 }
