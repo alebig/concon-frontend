@@ -1,13 +1,11 @@
-import {React, useRef, useEffect} from "react";
+import {React, /* useRef,  useEffect*/} from "react";
 import '../styles/form-edicion.css';
 
 function FormEdicion ( {registro, modificar }) {
 
-    const cant = useRef(null);
-    useEffect(() => {
-//        const cant2 = cant.current.value
-//        console.log(cant2)
-    }, []);
+    /* const cant = useRef(null); */
+    /* useEffect(() => {
+    }, []); */
     let ymdhms = registro.fecha_registro.split(/[- : T Z .]/);
     const pad = n => `${Math.floor(Math.abs(n))}`.padStart(2, '0');
 
@@ -36,6 +34,7 @@ function FormEdicion ( {registro, modificar }) {
 //        console.log(cant.current.value)
             modificar(valorActualizado)
     }
+    const handleSalir = () => {}
 
     return (
         <form className="form-edicion">
@@ -52,7 +51,7 @@ function FormEdicion ( {registro, modificar }) {
                         onChange={(e) => handleChange(e)} />
             </div>
             <input  className="edt-cantidad"
-                    ref={cant}
+                    /* ref={null} */
                     type="text"
                     name="cantidad"
                     defaultValue={valorActualizado.cantidad || " "}
@@ -60,7 +59,12 @@ function FormEdicion ( {registro, modificar }) {
             <button className="edt-boton"
                     type="submit"
                     onClick={handleEnviar}>
-                        Guardar la modificación
+                        Aceptar
+                    </button>
+            <button className="edt-boton"
+                    type="submit"
+                    onClick={handleSalir}>
+                        Cancelar
                     </button>
         </form>
     )
