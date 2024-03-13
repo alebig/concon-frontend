@@ -106,11 +106,9 @@ function IngresaConsumo() {
     const fec = registroActualizado.fecha_registro
     const fechaUTC = new Date (registroActualizado.fecha_registro).toISOString().slice(0, 19).replace('T', ' ');
     registroActualizado.fecha_registro = fechaUTC;
-    alert("Va a grabaMod")
     const result = await grabaMod(registroActualizado.record_id, registroActualizado);
-    console.log(result)
+    console.log(result + "nada")
     registroActualizado.fecha_registro = fec;
-    alert("Y Ahora??")
     setRegistros(orderedRecords)
     setFormEdit(false);
   }

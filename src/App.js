@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
-import IngresaConsumo from './components/ingresa-consumo'
+// import Identificacion from './components/identificacion';
+// import SelectItem from './components/select-item';
+import IngresaConsumo from './components/ingresa-consumo';
 
 function App() {
   return (
     <div className="App">
+      {/* <Identificacion /> */}
+      {/* <SelectItem /> */}
       <IngresaConsumo />
     </div>
   );
