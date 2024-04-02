@@ -12,7 +12,7 @@ var grabaMod = function grabaMod(id, editedRecord) {
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return regeneratorRuntime.awrap(fetch('http://191.101.235.205:4038/api/cafe/' + id, {
+          return regeneratorRuntime.awrap(fetch('api.alebig.com.ar/api/cafe' + id, {
             method: 'PUT',
             body: JSON.stringify(editedRecord),
             headers: {

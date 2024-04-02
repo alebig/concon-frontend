@@ -1,5 +1,5 @@
 const grabaMod = async (id, editedRecord) => {
-    const result = await fetch('http://191.101.235.205:4038/api/cafe/'+id,
+    const result = await fetch('api.alebig.com.ar/api/cafe'+id,
     {method: 'PUT',
     body: JSON.stringify(editedRecord), 
     headers: {'Content-Type': 'application/json'}
