@@ -1,5 +1,5 @@
 const lectura = async () => {
-    const res = await fetch('api.alebig.com.ar/api/cafe/',
+    const res = await fetch('http://api.alebig.com.ar/api/cafe',
     {method: 'GET'});
     if (res.ok) {
         const registros = await res.json()
