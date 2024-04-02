@@ -1,5 +1,5 @@
 const elimina = async (id) => {
-    const res = await fetch('https://api.alebig.com.ar/api/cafe/'+id,
+    const res = await fetch(`https://api.alebig.com.ar/api/cafe/${id}`,
         {method: 'DELETE'
         });
     if (res.ok) {
