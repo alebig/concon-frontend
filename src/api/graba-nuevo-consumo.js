@@ -1,5 +1,5 @@
 const agrega = async (newRecord) => {
-    const res = await fetch('api.alebig.com.ar/api/cafe',
+    const res = await fetch('https://api.alebig.com.ar/api/cafe',
         {method: 'POST',
         body: JSON.stringify(newRecord),
         headers: {'Content-Type': 'application/json'}
